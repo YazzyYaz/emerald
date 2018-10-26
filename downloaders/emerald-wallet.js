@@ -19,7 +19,7 @@ const rootPath = path.resolve(__dirname, '../');
 switch (platform) {
   case 'darwin':
     const osxFile = fs.createWriteStream(path.resolve(rootPath, 'EmeraldWallet.dmg'));
-    return request('http://builds.etcdevteam.com/emerald-wallet/v1.0.x/EmeraldWallet-mac-v1.0.0+55-e427cf9.dmg')
+    return request('http://builds.etcdevteam.com/emerald-wallet/v1.0.x/EmeraldWallet-mac-v1.0.0+78-cfb48df.dmg')
       .pipe(osxFile)
       .on('finish', () => {
         const processCwd = process.cwd();
